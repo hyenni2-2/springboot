@@ -11,7 +11,7 @@ public class HelloController {
 
     @GetMapping("hello")
     public String hello(Model model){
-        model.addAttribute("data","!!");
+        model.addAttribute("data","hello!!");
         return "hello";
     }
 
@@ -46,8 +46,6 @@ public class HelloController {
         public void setName(String name) {
             this.name = name;
         }
-
-
 
     }
 }
